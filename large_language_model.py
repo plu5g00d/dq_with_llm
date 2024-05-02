@@ -112,7 +112,7 @@ def return_std_prompts(sample_dataset, context):
     qs.append(prompt)
 
     ## prompt - 7 - goodbye
-    prompt = "Thank the meeting attendees for watching the demo & invite them to learn more about LLMs."
+    prompt = "Say thank you for watching the demo & invite the viewer to learn more about LLMs."
     qs.append(prompt)
 
     return qs
