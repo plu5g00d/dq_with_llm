@@ -126,8 +126,9 @@ def perform_preset_analysis(idx, qs, prompt_messages):
         user_q = {"role": "user", "content": prompt}
         prompt_messages.append(user_q)
 
+    ## "gpt-3.5-turbo"
     with st.chat_message("assistant"):
-        stream = client.chat.completions.create(model="gpt-3.5-turbo",
+        stream = client.chat.completions.create(model="gpt-4o",
                 messages =  prompt_messages,
                 stream=True,
                 temperature=0.2)
